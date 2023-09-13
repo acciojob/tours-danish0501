@@ -58,7 +58,7 @@ function App() {
   if (loading) {
     return (
       <section className="main">
-        <h2 className="title">Loading...</h2>
+        <h2 className="loading">Loading...</h2>
       </section>
     );
   }
@@ -66,7 +66,7 @@ function App() {
   if (tours.length === 0) {
     return (
       <section className="main">
-        <h2 className="title">No more tours</h2>
+        <h2 className="title">No tours left</h2>
         <button className="btn" onClick={handleRefresh}>Refresh</button>
       </section>
     );
@@ -74,7 +74,7 @@ function App() {
 
   return (
     <section className="main">
-      <h2 className="title">Our Tours</h2>
+      <h2 className="title">Show the Tour list</h2>
       {tours.map((tour) => (
         <div className="single-tour" key={tour.id}>
           <img src={tour.image} alt={tour.name} />
@@ -92,7 +92,7 @@ function App() {
             </p>
             <p className="tour-price">${tour.price}</p>
             <button className="delete-btn" onClick={() => handleDelete(tour.id)}>
-              Not Interested
+              Delete Tour
             </button>
           </div>
         </div>

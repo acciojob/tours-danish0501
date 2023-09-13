@@ -9,6 +9,12 @@
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
+
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
   
   .single-tour {
     border: 1px solid #ccc;
